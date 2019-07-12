@@ -1,0 +1,36 @@
+<nav role="navigation" class="navbar navbar-expand-sm navbar-light mb-3">
+  <div class="container">
+    {{#if user}}
+    <a class="navbar-brand" style="" href="/item">T<span class="logoY"> Y </span> T </a>
+     {{else}}
+    <a class="navbar-brand" href="/">T<span class="logoY"> Y </span> T </a>
+     {{/if}}
+    <button role="button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul role="list" class="navbar-nav ml-auto">
+        {{#if user}}
+        <li role="listitem" class="nav-item dropdown">
+          <a href="#" role="link" style="color:black;" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink">Items</a>
+          <div class="dropdown-menu">
+            <a href="/item" role="link" style="color:#2B244E;" class="dropdown-item">My Items</a>
+            <a href="/item/createitem" role="link" style="color:#2B244E;" class="dropdown-item">Create Item</a>
+          </div>
+        </li>
+        <li ole="listitem" class="nav-item">
+          <a href="/user/logout" role="link" style="color:black;" class="nav-link">Logout</a>
+        </li>
+        {{else}}
+        <li ole="listitem" class="nav-item">
+          <a href="/user/login" role="link" style="color:black;" class="nav-link">Login</a>
+        </li>
+        <li ole="listitem" class="nav-item">
+          <a href="/user/register" role="link" style="color:black;" class="nav-link">Register</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

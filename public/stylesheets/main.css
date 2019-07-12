@@ -1,0 +1,34 @@
+
+
+/* // Small devices */
+@media (min-width: 576px) { 
+  .img-fluid{
+   min-height: 250px;
+  }
+}
+
+/* // Medium devices  */
+@media (min-width: 768px) {
+  .img-fluid{
+    min-height: 350px;
+    max-height: 450px;
+   }
+} */
+
+/* // Large devices */
+@media (min-width: 992px) { 
+ 
+}
+
+/* // Extra large devices */
+@media (min-width: 1200px) {
+ 
+}
+
+.card-header {
+  color: black;
+}
+
+.card-title {
+  color: black;
+}
